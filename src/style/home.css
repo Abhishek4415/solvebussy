@@ -1,0 +1,440 @@
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 110px;
+
+
+}
+.header_box{
+    position: relative;
+    top: 80px;
+    margin-left: 10%;
+
+}
+.header{
+  
+    font-size: 60px;
+    letter-spacing: -2px;
+    color: #1e293b;
+}
+
+
+.header_foot{
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    margin-left: 12%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+
+}
+
+.headersecond{
+    position: relative;
+    color: black;
+    font-family: raleway;
+    font-size: 25px;
+    margin-left: 9%;
+    letter-spacing: 1px;
+}
+.header2{
+    position: relative;
+    color: black;
+    font-family: raleway;
+    margin-left: 9%;
+    top: 120px;
+    font-size: 25px;
+
+    letter-spacing: 1px;
+}
+
+.InputContainer {
+    position: absolute;
+    top: 240px;
+    margin-left: 25%;
+    width:50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 97%;
+    height: 50px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+  }
+
+  .search_foot {
+    position: relative;
+    top: 210px;
+    margin-left: 28%;
+    z-index: -1;
+
+  }
+  .click{
+    padding: 8px 20px;
+    border: unset;
+    border-radius: 20px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    /* font-weight: 1000; */
+    font-size: 10px;
+    opacity: 0.5;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-left: 20px;
+    top: 10px;
+   }
+   
+   .click::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -5;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .click:hover {
+    color: #e8e8e8;
+    scale: 0.98;
+   }
+   
+   .click:hover::before {
+    width: 100%;
+   }
+
+
+   .search_foot button{
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+   }
+
+
+
+
+
+
+
+
+/* =========================================================== */
+/* recipe part */
+
+#recipe {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 50px;
+    /* background: ;  */
+
+
+
+}
+
+.topview {
+    display: flex;
+    position: relative;
+    top: -50px;
+    margin-bottom: 50px;
+    /* opacity: 0.5; */
+    justify-content: space-around;
+}
+
+.topview img {
+    height: 50px;
+    width: 50px;
+}
+
+.header h1 {
+    font-family: roboto;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+    position: relative;
+    color: black;
+    left: 150px;
+    top: 300px;
+    font-family: raleway;
+}
+
+.card-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    position: relative;
+    left: 100px;
+    margin-right: 210px;
+    top: 300px;
+    
+
+}
+
+.card-container::-webkit-scrollbar {
+    /* scrollbar-width: 1px; */
+    display: none;
+
+}
+.total{
+    display: inline-block;
+}
+
+.card {
+    display: flex;
+    /* Ensures cards are aligned horizontally */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-y: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+.card::-webkit-scrollbar {
+    /* scrollbar-width: 1px; */
+    display: none;
+
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+    margin: 30px 20px;
+    
+}
+
+.card p{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    
+    bottom: 8px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+
+}
+
+
+.card-image {
+    width: 140px;
+    height: fit-content;
+
+}
+
+.card-name {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header2 h1 {
+    font-family: roboto;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+    position: relative;
+    color: black;
+    top: 30px;
+    left: 150px;
+
+}
+
+.header3 h1 {
+    font-family: roboto;
+    letter-spacing: 1px;
+
+    font-weight: bold;
+    position: relative;
+    color: black;
+    ;
+    top: 50px;
+    left: 150px;
+
+}
+
+hr {
+    top: -10px;
+    left: 150px;
+    width: 82%;
+    z-index: -1;
+}
+
+.card-container2 {
+
+    padding: 20px;
+    position: relative;
+    /* background-color: #4CAF50; */
+    left: 100px;
+    margin-right: 210px;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #8ec5fc86;
+    background-image: linear-gradient(62deg, #8ec5fc51 0%, #e0c3fcb5 100%);
+}
+
+
+
+
+
+
+
+.card2 {
+    margin-bottom: 20px;
+    display: inline-block;
+    /* Ensures cards are aligned horizontally */
+    margin-right: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    overflow-y: hidden;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    
+
+    overflow-x: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* background-color: #8ec5fc86; */
+    /* background-image: linear-gradient(62deg, #8ec5fc51 0%, #e0c3fcb5 100%); */
+}
+
+.card2 img {
+    height: 300px;
+    width: 300px;
+}
+
+
+.card2:hover {
+    transform: translateY(-10px);
+
+}
+
+.card-overlay {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.955);
+    color: black;
+    position: relative;
+    height: 300px;
+    top: -305px;
+
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: opacity 0.3s ease;
+    /* font-family: 'Protest Revolution', sans-serif; */
+    font-family: roboto;
+
+    font-weight: bolder;
+    font-size: 16px;
+
+
+
+}
+
+.card-overlay:hover {
+    opacity: 1;
+}
+
+
+.card-container3 {
+    /* overflow-x: auto;  */
+    /* Enables horizontal scrolling */
+    /* white-space: nowrap;  */
+    /* Prevents wrapping of child elements */
+    padding: 20px;
+    position: relative;
+    /* background-color: #4CAF50; */
+    left: 100px;
+    margin-right: 210px;
+    top: 140px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #8ec5fc86;
+    background-image: linear-gradient(62deg, #8efca251 0%, #f6fcc3b5 100%);
+
+
+}
+
+
+.card3 {
+    margin-bottom: 50px;
+    display: inline-block;
+    /* Ensures cards are aligned horizontally */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-y: hidden;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.card3:hover {
+    transform: translateY(-10px);
+
+}
+
+.card3 img {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+/* =================================== */
+
+
+
+.card {
+    background-color: white;
+    height: 180px;
+    width: 144px;
+}
+
+
+/* =========================================================== */

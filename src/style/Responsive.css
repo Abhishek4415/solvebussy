@@ -1,0 +1,345 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+    /* =====================================
+                NAV BAR RESPONSIVE
+   ===================================*/
+    .navbar {
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    .search {
+        margin: 10px 0;
+        width: 30%;
+        position: relative;
+        top: -1px;
+
+    }
+
+    input {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mini-logo {
+        display: block;
+        font-size: 30px;
+        background-color: #c06a28;
+        font-weight: bolder;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: 20px;
+        font-family: 'Protest Revolution', sans-serif;
+    }
+
+    .mini-logo h3 {
+        filter: brightness(5);
+    }
+    .profile {
+        height: 50px;
+        width: 50px;
+        top: 5px;
+    }
+
+    .wishlist {
+        font-size: 25px;
+        top: 15px;
+    }
+
+    .section {
+        display: none;
+    }
+
+    .dropdown-menu {
+        width: 60%;
+        font-size: 30px;
+        align-items: left;
+        font-family: raleway;
+        border-radius: 0;
+        right: -5px;
+        height: 100vh;
+        top: 120px;
+        animation: transition 0.3s;
+    }
+
+
+
+
+
+
+    /* =================================
+            HOME SECTION RESPONSIVE
+    ==============================*/
+
+
+    #home {
+        position: relative;
+        display: flex;
+        width: 122%;
+        overflow-x: hidden;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+
+    .heroheader {
+        font-size: 40px;
+        position: relative;
+        top: 470px;
+    }
+
+    .animation{
+        position: absolute;
+        height: 300px;
+        width: 370px;
+        border-radius: 20px;
+        top: 140px;
+    }
+    .hatanimation{
+        display: none;
+    }
+    .animation img{
+        height: 300px;
+        width: 370px;
+    }
+
+    @keyframes slide {
+        20%{
+            transform: translateX(-370px);
+        }40%{
+            transform: translateX(-740px);
+        }60%{
+            transform: translateX(-1110px);
+    
+        }80%{
+            transform: translateX(-1480px);
+    
+        }100%{
+            transform: translateX(0);
+        }
+        
+        
+    }
+
+    .heroheader strong {
+        font-size: 50px;
+    }
+
+    
+
+    .sideview img {
+        height: 150px;
+        width: 150px;
+        display: none;
+    }
+    .sideview2 img {
+        height: 150px;
+        width: 150px;
+        display: none;
+    }
+
+   
+
+    #recipe {
+        margin-bottom: 30px;
+    }
+
+    
+
+    .topview img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header h1, .header2 h1, .header3 h1 {
+        font-size: 24px;
+        left: 0;
+        text-align: center;
+    }
+
+    .card-container{
+        position: relative;
+        width: 100%;
+        left: 20px;
+    }
+
+    .card{
+        width: 80px;
+        height: 110px;
+    }
+   
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-container2{
+        position: relative;
+        left: 50px;
+        right: 0;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .card2{
+        width:160px;
+        height:220px;
+    }
+
+    .card2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-container3{
+        position: relative;
+        width: 98%;
+        display: inline-block;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        left: 50px;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+        
+    }
+    
+    .card3{
+        position: relative;
+        width: 85%;
+    }
+
+    .card3 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-overlay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    .card2 .card-overlay .card-title{
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    /* =====================================
+    MENU PLANNER 
+    =================================== */
+
+    #menuplanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        width: 112%;
+        background: #393e46;
+    }
+
+    #menuplanner img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+    }
+
+    .menu-planner {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        margin: 20px 0;
+        box-shadow: none;
+    }
+
+    .menu-planner h2 {
+        font-size: 24px;
+    }
+
+    .menu-form {
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .menu-form label {
+        width: 100%;
+    }
+
+    .menu-form select,
+    .menu-form input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .menu-form input {
+        width: 94%;
+        padding: 10px;
+    }
+
+    .menu-form button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        top: 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        top: 0;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    .menu-display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-display li {
+        margin-bottom: 10px;
+    }
+
+    .menu-item h3 {
+        font-size: 20px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+
+   
+
+/* ===============
+ABOUT
+===================================
+*/
+
+#about{
+    position: relative;
+    width: 122%;
+}
+    
+
+
+
+
+}
+
